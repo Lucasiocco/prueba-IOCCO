@@ -1,6 +1,6 @@
 # Comet - Front Page
 
-Comet es una página web que presenta un diseño moderno y adaptable, desarrollado para mostrar las características principales de un producto o servicio de manera clara y organizada.
+Comet es un proyecto realizado a partir de una imagen, la cual debia ser copiada con exactitud como prueba tecnica del equipo de seleccion de DOMO.
 
 ## Tecnologías Utilizadas
 
