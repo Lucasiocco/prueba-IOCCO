@@ -1,0 +1,310 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 10px 40px;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Spinner */
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.progress {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin: 0 .5em;
+  font-size: 6px;
+  text-indent: 999em;
+  overflow: hidden;
+  animation: spin 1s infinite steps(8);
+}
+
+.progress:before,
+.progress:after,
+.progress>div:before,
+.progress>div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.25em;
+  /* (container width - part width)/2  */
+  width: .5em;
+  height: 1.5em;
+  border-radius: .2em;
+  background: #eee;
+  box-shadow: 0 3.5em #eee;
+  /* container height - part height */
+  transform-origin: 50% 2.5em;
+  /* container height / 2 */
+}
+
+.progress:before {
+  background: #555;
+}
+
+.progress:after {
+  transform: rotate(-45deg);
+  background: #777;
+}
+
+.progress>div:before {
+  transform: rotate(-90deg);
+  background: #999;
+}
+
+.progress>div:after {
+  transform: rotate(-135deg);
+  background: #bbb;
+}
+
+/* Main */
+
+.tittle {
+  padding-right: 80px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 550;
+  color: #5f6163;
+  margin-top: 20px;
+}
+
+a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+.col-md-6 {
+  padding: 0 30px;
+}
+
+#texto-main {
+  margin-top: 80px;
+}
+
+.text-primary {
+  font-weight: 800;
+  color: #3772f1 !important;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+.learn-more {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.text-muted {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  padding-right: 50px;
+}
+
+.text-success {
+  color: #b0fd4b !important;
+}
+
+.text-info {
+  color: #c95beb !important;
+}
+
+/* Footer */
+
+.logoFooter {
+  width: 20% !important;
+}
+
+.footer-section {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #2c2c2c;
+}
+
+.footer-section img {
+  max-width: 150px;
+}
+
+.footer-section p {
+  margin: 10px 0;
+  color: #6c757d;
+}
+
+.footer-section .list-inline {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-section .list-inline-item {
+  margin-right: 15px;
+}
+
+.footer-section .list-item a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer-section .list-item a:hover {
+  color: aliceblue;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  text-decoration: none !important;
+}
+
+ul.list {
+  width: 150px;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  ;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  /* Reduce size of social icons and logo in mobile */
+  .navbar .nav-link i {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  /* Stack icon boxes vertically on smaller screens */
+  .icon-box {
+    margin-bottom: 2rem;
+  }
+
+  .tittle {
+    padding-right: 0;
+  }
+
+  .text-muted {
+    padding-right: 0;
+  }
+
+  /* Reduce padding and margin for smaller screens */
+  #texto-main {
+    margin-bottom: 2rem;
+  }
+
+  .icon-box h5 {
+    font-size: 1rem;
+  }
+
+  .icon-box p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer adjustments for mobile */
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section ul {
+    display: inline-block;
+  }
+
+  .footer-section ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* Further adjustments for very small screens */
+  .navbar .nav-link i {
+    font-size: 0.8rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .icon-box h5 {
+    font-size: 0.9rem;
+  }
+
+  .icon-box p {
+    font-size: 0.8rem;
+  }
+
+  .tittle {
+    padding-right: 0;
+  }
+
+  .text-muted {
+    padding-right: 0;
+  }
+
+  .learn-more {
+    font-size: 0.8rem;
+  }
+
+  .footer-section img {
+    max-width: 100px;
+  }
+}
